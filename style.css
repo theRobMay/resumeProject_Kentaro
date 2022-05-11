@@ -1,0 +1,29 @@
+.main-container {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(20,5%);
+    grid-template-rows: repeat(20, 15fr);
+}
+.name {
+    grid-column: 1;
+    grid-row: 1 / span 5;
+    text-align: end;
+    justify-content: end;
+    writing-mode:vertical-rl;
+    line-height:2rem;
+    transform:rotate(180deg);
+    font-size: 66px;
+    color: azure;
+    padding: 15px;
+    text-transform: uppercase;
+}
+.picture {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/1/1a/Kentaro_Miura.png");
+    height: 333px;
+    width: 255px;
+    grid-column: 2;
+    align-content: start;
+}
+.contact {
+
+}
