@@ -2,7 +2,7 @@
     background-color: black;
     display: grid;
     grid-template-columns: repeat(20,5%);
-    grid-template-rows: repeat(20, 15fr);
+    grid-template-rows: repeat(5, 15fr);
 }
 .name {
     grid-column: 1;
@@ -15,7 +15,7 @@
     font-size: 66px;
     color: azure;
     padding: 15px;
-    text-transform: uppercase;
+    font-variant: small-caps;
 }
 .picture {
     background-image: url("https://upload.wikimedia.org/wikipedia/en/1/1a/Kentaro_Miura.png");
@@ -25,5 +25,95 @@
     align-content: start;
 }
 .contact {
-
+    display: grid;
+    grid-row-start: 2;
+    grid-column: 2/4;
+    background-color: darkred;
+    font: small-caps 12px Verdana
+}
+.sacrifice {
+    max-height: inherit;
+    max-width: inherit;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+.brandImage {
+    grid-column-start: 12;
+    max-height: 333px;
+}
+.gutsQuote {
+    display: grid;
+    grid-column: 7/12;
+    font: small-caps 30px Verdana;
+    background-color: darkred;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.mangaPanelOne {
+    grid-row-start: 2;
+    grid-column: 5/13;
+    max-height: 333px;
+}
+.mangaOne {
+    display: block;
+    width: 15%;
+    height: auto;
+    position: relative;
+    padding: 56.25% 0 0 0;
+}
+body > div > div.mangaPanelOne > a > img {
+    display: block;
+    max-width: 600%;
+    max-height: 150%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.mangaPanelTwo {
+    grid-row: 3/6;
+    grid-column: 1/7;
+    max-height: 333px;
+}
+.mangaTwo {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 56.25% 0 0 0;
+}
+body > div > div.mangaPanelTwo > a > img {
+    display: block;
+    max-width: 300%;
+    max-height: 300%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.mangaPanelThree {
+    grid-row: 3/6;
+    grid-column: 8/21;
+    max-height: 333px;
+}
+.mangaThree {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 56.25% 0 0 0;
+}
+body > div > div.mangaPanelThree > a > img {
+    display: block;
+    max-width: 120%;
+    max-height: 120%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
